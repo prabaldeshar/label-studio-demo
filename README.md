@@ -18,6 +18,48 @@ Label studio demo:
 - Annotations
 - Exporting Annotations
 
+Labelling Configuration for Text Classification
+```xml
+<View>
+    <Header value="$doc_name"/>
+    <Text name="text" value="$content"/>
+    <Choices name="label" toName="text" choice="multiple" showInLine="true">
+      <Choice value="Label 1"/>
+      <Choice value="Label 2"/>
+      <Choice value="Label 3"/>
+    </Choices>
+ </View>
+```
+
+Labelling Configuration for NER
+```xml
+<View>
+  <Header value="$doc_name"/>
+  <Labels name="label" toName="text"> 
+  <Label value="CARDINAL" background="#FFA39E"/><Label value="DATE" background="#D4380D"/>
+<Label value="EVENT" background="#FFC069"/>
+<Label value="FAC" background="#AD8B00"/>
+<Label value="GPE" background="#D3F261"/>
+<Label value="LANGUAGE" background="#389E0D"/>
+<Label value="LAW" background="#5CDBD3"/>
+<Label value="LOC" background="#096DD9"/>
+<Label value="MONEY" background="#ADC6FF"/>
+<Label value="NORP" background="#9254DE"/>
+<Label value="ORDINAL" background="#F759AB"/>
+<Label value="ORG" background="#FFA39E"/>
+<Label value="PERCENT" background="#D4380D"/>
+<Label value="PERSON" background="#FFC069"/>
+<Label value="PRODUCT" background="#AD8B00"/>
+<Label value="QUANTITY" background="#D3F261"/>
+<Label value="TIME" background="#389E0D"/>
+<Label value="WORK_OF_ART" background="#5CDBD3"/></Labels>
+
+<Text name="text" value="$content"/>
+</View>
+```
+
+
+
 ## Label Studio ML backend
 
 ## What is the Label Studio ML backend?
