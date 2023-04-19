@@ -60,6 +60,7 @@ Labelling Configuration for NER
 </View>
 ```
 
+More about XML-like tags for label-studio: https://labelstud.io/tags
 
 
 ## Label Studio ML backend
